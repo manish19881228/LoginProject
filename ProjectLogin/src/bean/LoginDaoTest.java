@@ -12,6 +12,7 @@ public class LoginDaoTest {
 		bean.setPass("password");
 		assertEquals("manish",bean.getEmail());
 		assertEquals("password", bean.getPass());
+		assertTrue("manish".equalsIgnoreCase(bean.getEmail()));
 	}
 
 }
